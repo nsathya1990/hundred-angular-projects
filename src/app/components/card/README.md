@@ -6,7 +6,7 @@ Build a basic card component that takes in an icon, the title and subtitle. it a
 
 ---
 
-- component
+- @Component()
 - ng-content
 - @Input()
 - dynamic class binding
