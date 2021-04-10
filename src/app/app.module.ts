@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 
+import { SharedModule } from './shared/shared.module';
+
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { StarRatingsComponent } from './components/star-ratings/star-ratings.component';
@@ -19,7 +20,6 @@ import { APP_ROUTES } from './app.routes';
   declarations: [
     AppComponent,
     ToolbarComponent,
-    CardComponent,
     AccordionComponent,
     ProgressBarComponent,
     StarRatingsComponent,
@@ -27,7 +27,12 @@ import { APP_ROUTES } from './app.routes';
     ComponentDocumentationComponent,
     ServiceDocumentationComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(APP_ROUTES)],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterModule.forRoot(APP_ROUTES),
+    SharedModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

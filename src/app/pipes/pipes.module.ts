@@ -2,12 +2,16 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { PipeDocumentationComponent } from './pipe-documentation/pipe-documentation.component';
+import { SharedModule } from '../shared/shared.module';
 
 import { PIPE_ROUTES } from './pipes.routes';
 
+import { PipeDocumentationComponent } from './pipe-documentation/pipe-documentation.component';
+
+import { TruncatePipe } from './truncate/truncate.pipe';
+
 @NgModule({
-  declarations: [PipeDocumentationComponent],
-  imports: [CommonModule, RouterModule.forChild(PIPE_ROUTES)],
+  declarations: [PipeDocumentationComponent, TruncatePipe],
+  imports: [RouterModule.forChild(PIPE_ROUTES), CommonModule, SharedModule],
 })
 export class PipesModule {}
