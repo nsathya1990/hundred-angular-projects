@@ -11,11 +11,9 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
 import { StarRatingsComponent } from './components/star-ratings/star-ratings.component';
 import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
+import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 
 import { APP_ROUTES } from './app.routes';
-import { PipeDocumentationComponent } from './pipes/pipe-documentation/pipe-documentation.component';
-import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
-import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 
 @NgModule({
   declarations: [
@@ -27,9 +25,7 @@ import { DirectiveDocumentationComponent } from './directives/directive-document
     StarRatingsComponent,
     TopOfPageComponent,
     ComponentDocumentationComponent,
-    PipeDocumentationComponent,
     ServiceDocumentationComponent,
-    DirectiveDocumentationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(APP_ROUTES)],
   providers: [],
