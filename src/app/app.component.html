@@ -8,11 +8,21 @@
   </ul>
 </app-toolbar>
 
-<app-card
-  [iconClasses]="'fas fa-info-circle'"
-  [title]="'Card'"
-  [subTitle]="'Components'"
->
-  <p footer>Footer Content</p>
-  <p body>Body Content</p>
-</app-card>
+<main>
+  <app-card
+    [iconClasses]="'fas fa-info-circle'"
+    [title]="'Accordion'"
+    [subTitle]="'Components'"
+  >
+    <app-accordion body [items]="accordionItems"></app-accordion>
+  </app-card>
+
+  <app-card
+    [iconClasses]="'fas fa-info-circle'"
+    [title]="'Card'"
+    [subTitle]="'Components'"
+  >
+    <p footer>Footer Content</p>
+    <p body>Body Content</p>
+  </app-card>
+</main>
