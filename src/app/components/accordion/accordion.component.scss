@@ -12,6 +12,7 @@ $padding: 10px 20px;
       display: grid;
       grid-template-columns: 1fr auto;
       align-items: center;
+      cursor: pointer;
       padding: $padding;
 
       i {
