@@ -9,9 +9,10 @@ import { PIPE_ROUTES } from './pipes.routes';
 import { PipeDocumentationComponent } from './pipe-documentation/pipe-documentation.component';
 
 import { TruncatePipe } from './truncate/truncate.pipe';
+import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-formatter.pipe';
 
 @NgModule({
-  declarations: [PipeDocumentationComponent, TruncatePipe],
+  declarations: [PipeDocumentationComponent, TruncatePipe, CreditCardFormatterPipe],
   imports: [RouterModule.forChild(PIPE_ROUTES), CommonModule, SharedModule],
 })
 export class PipesModule {}
