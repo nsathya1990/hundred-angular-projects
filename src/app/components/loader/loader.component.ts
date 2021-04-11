@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+import { LoaderType } from './models/loader-type.enum';
+
 @Component({
   selector: 'app-loader',
   templateUrl: './loader.component.html',
@@ -7,8 +9,43 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class LoaderComponent implements OnInit {
   @Input() isLoading = false;
+  @Input() loaderType = LoaderType.Circular;
+  LoaderType = LoaderType;
+
+  private loading = 'Loading';
+  private loadingPeriods = '.\0\0';
+  get loadingText(): string {
+    return `${this.loading}${this.loadingPeriods}`;
+  }
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.loaderType === LoaderType.Loading) {
+      this.updateLoaderPeriods();
+    }
+  }
+
+  private updateLoaderPeriods(): void {
+    let currentStep = 0;
+
+    setInterval(() => {
+      switch (currentStep % 3) {
+        case 0:
+          this.loadingPeriods = '..\0';
+          currentStep++;
+          break;
+        case 1:
+          this.loadingPeriods = '...';
+          currentStep++;
+          break;
+        case 2:
+          this.loadingPeriods = '.\0\0';
+          currentStep = 0;
+          break;
+        default:
+          break;
+      }
+    }, 500);
+  }
 }

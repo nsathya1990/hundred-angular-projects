@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { AccordionItem } from '../accordion/accordion-item.interface';
 
+import { LoaderType } from '../loader/models/loader-type.enum';
+
 @Component({
   selector: 'app-component-documentation',
   templateUrl: './component-documentation.component.html',
@@ -20,8 +22,8 @@ export class ComponentDocumentationComponent implements OnInit {
       isExpanded: false,
     },
   ];
-
   progressValue = 25;
+  loaderType = LoaderType.Loading;
 
   constructor() {}
 
