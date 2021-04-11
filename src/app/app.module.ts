@@ -18,6 +18,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
 
 import { APP_ROUTES } from './app.routes';
+import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { APP_ROUTES } from './app.routes';
     ServiceDocumentationComponent,
     LoaderComponent,
     CreditCardInputComponent,
+    TwitterPostComponent,
   ],
   imports: [
     BrowserModule,
