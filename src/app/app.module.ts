@@ -13,6 +13,7 @@ import { StarRatingsComponent } from './components/star-ratings/star-ratings.com
 import { TopOfPageComponent } from './components/top-of-page/top-of-page.component';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 import { APP_ROUTES } from './app.routes';
 
@@ -26,6 +27,7 @@ import { APP_ROUTES } from './app.routes';
     TopOfPageComponent,
     ComponentDocumentationComponent,
     ServiceDocumentationComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
