@@ -15,5 +15,10 @@ export const APP_ROUTES: Routes = [
     loadChildren: () =>
       import('./pipes/pipes.module').then((m) => m.PipesModule),
   },
+  {
+    path: 'others',
+    loadChildren: () =>
+      import('./others/others.module').then((m) => m.OthersModule),
+  },
   { path: 'services', component: ServiceDocumentationComponent },
 ];
