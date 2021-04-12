@@ -37,6 +37,12 @@ export class ComponentDocumentationComponent implements OnInit {
     'Madagascar',
   ];
 
+  selectedTab = 0;
+  tabs: { title: string; active: boolean }[] = [
+    { title: 'Tab 1', active: true },
+    { title: 'Tab 2', active: false },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}
