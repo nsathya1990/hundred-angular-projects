@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 
 import { SharedModule } from './shared/shared.module';
 
+import { APP_ROUTES } from './app.routes';
+
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
@@ -16,11 +18,10 @@ import { ComponentDocumentationComponent } from './components/component-document
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
-
-import { APP_ROUTES } from './app.routes';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { QuoteComponent } from './components/quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { ModalComponent } from './components/modal/modal.component';
     TwitterPostComponent,
     LinkedinPostComponent,
     ModalComponent,
+    QuoteComponent,
   ],
   imports: [
     BrowserModule,
