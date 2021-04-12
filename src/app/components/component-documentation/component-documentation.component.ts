@@ -22,6 +22,7 @@ export class ComponentDocumentationComponent implements OnInit {
       isExpanded: false,
     },
   ];
+
   progressValue = 25;
   loaderType = LoaderType.Loading;
 
@@ -30,4 +31,8 @@ export class ComponentDocumentationComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  debounceExampleMethod(value: string): void {
+    console.log(`Component Documentation: ${value}`);
+  }
 }
