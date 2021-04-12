@@ -12,6 +12,7 @@ button {
   height: 0;
   width: 0;
   visibility: hidden;
+  cursor: pointer;
 
   @include box-shadow();
 
