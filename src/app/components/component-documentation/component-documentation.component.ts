@@ -25,6 +25,8 @@ export class ComponentDocumentationComponent implements OnInit {
   progressValue = 25;
   loaderType = LoaderType.Loading;
 
+  toggleValue = false;
+
   constructor() {}
 
   ngOnInit(): void {}

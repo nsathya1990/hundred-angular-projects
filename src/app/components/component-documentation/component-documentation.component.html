@@ -3,6 +3,14 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Toggle'"
+  [subTitle]="'Components'"
+>
+  <app-toggle body [isOn]="toggleValue"></app-toggle>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Quote'"
   [subTitle]="'Components'"
 >
