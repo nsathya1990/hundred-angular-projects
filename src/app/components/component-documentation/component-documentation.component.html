@@ -3,6 +3,31 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Rich Text Viewer'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <div>
+      <h3>Good Example</h3>
+      <app-rich-text-viewer
+        [htmlText]="'<span>Hello World</span>'"
+      ></app-rich-text-viewer>
+    </div>
+    <div>
+      <h3>Empty Example</h3>
+      <app-rich-text-viewer [htmlText]="'   '"></app-rich-text-viewer>
+    </div>
+    <div>
+      <h3>Bad HTML Example</h3>
+      <app-rich-text-viewer
+        [htmlText]="'<p> Hello World'"
+      ></app-rich-text-viewer>
+    </div>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Toggle'"
   [subTitle]="'Components'"
 >
