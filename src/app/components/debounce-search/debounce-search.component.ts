@@ -9,8 +9,7 @@ import { distinctUntilChanged } from 'rxjs/operators';
   styleUrls: ['./debounce-search.component.scss'],
 })
 export class DebounceSearchComponent implements OnInit {
-  searchTerm = '';
-
+  @Input() searchTerm = '';
   @Input() placeholder = 'Search';
   @Output() searchUpdate = new EventEmitter<string>();
 

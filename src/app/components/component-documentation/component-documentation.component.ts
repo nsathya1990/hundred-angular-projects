@@ -28,6 +28,15 @@ export class ComponentDocumentationComponent implements OnInit {
 
   toggleValue = false;
 
+  searchListItems = [
+    'United States',
+    'Mexico',
+    'United Kingdom',
+    'United Arab Emirates',
+    'India',
+    'Madagascar',
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}
