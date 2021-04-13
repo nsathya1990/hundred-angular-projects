@@ -28,6 +28,14 @@ i {
   cursor: pointer;
 }
 
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+/** Ripple Effect */
+
 .ripple {
   background-position: center;
   transition: all 0.8s;
