@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-simple-table',
@@ -12,8 +12,13 @@ export class SimpleTableComponent implements OnInit {
     { first: 'Tom', last: 'Cruise', dob: '12/23/1991' },
     { first: 'Tom', last: 'Hanks', dob: '12/23/1991' },
   ];
+  @Output() headerSelected = new EventEmitter<{ key: string; value: any }>();
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  headerSelection(key: string, value: any): void {
+    this.headerSelected.emit({ key, value });
+  }
 }
