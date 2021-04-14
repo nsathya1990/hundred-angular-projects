@@ -27,6 +27,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
+import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { RibbonComponent } from './ribbon/ribbon.component';
     SortTableComponent,
     EmailFormComponent,
     RibbonComponent,
+    ButtonToggleComponent,
   ],
   imports: [
     CommonModule,

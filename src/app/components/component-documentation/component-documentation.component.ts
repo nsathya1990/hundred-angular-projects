@@ -6,6 +6,8 @@ import { LoaderType } from '../loader/models/loader-type.enum';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { RibbonType } from '../ribbon/ribbon-type.enum';
 
+import { ButtonMeta } from '../button-toggle/button-meta.model';
+
 @Component({
   selector: 'app-component-documentation',
   templateUrl: './component-documentation.component.html',
@@ -48,6 +50,12 @@ export class ComponentDocumentationComponent implements OnInit {
   RibbonLocation = RibbonLocation;
   RibbonType = RibbonType;
   ribbonStyle = { type: RibbonType.Info, location: RibbonLocation.TopRight };
+
+  buttonToggleOptions: ButtonMeta[] = [
+    new ButtonMeta({ id: 1, title: 'Bold' }),
+    new ButtonMeta({ id: 2, title: 'Italic' }),
+    new ButtonMeta({ id: 3, title: 'Underline' }),
+  ];
 
   constructor() {}
 
