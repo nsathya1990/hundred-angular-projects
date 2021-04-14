@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 
 import { LoaderType } from '../loader/models/loader-type.enum';
+import { RibbonLocation } from '../ribbon/ribbon-location.enum';
+import { RibbonType } from '../ribbon/ribbon-type.enum';
 
 @Component({
   selector: 'app-component-documentation',
@@ -42,6 +44,10 @@ export class ComponentDocumentationComponent implements OnInit {
     { title: 'Tab 1', active: true },
     { title: 'Tab 2', active: false },
   ];
+
+  RibbonLocation = RibbonLocation;
+  RibbonType = RibbonType;
+  ribbonStyle = { type: RibbonType.Info, location: RibbonLocation.TopRight };
 
   constructor() {}
 
