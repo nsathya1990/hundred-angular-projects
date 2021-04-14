@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
-import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 
 export const APP_ROUTES: Routes = [
   { path: '', component: ComponentDocumentationComponent },
@@ -20,5 +19,9 @@ export const APP_ROUTES: Routes = [
     loadChildren: () =>
       import('./others/others.module').then((m) => m.OthersModule),
   },
-  { path: 'services', component: ServiceDocumentationComponent },
+  {
+    path: 'services',
+    loadChildren: () =>
+      import('./services/services.module').then((m) => m.ServicesModule),
+  },
 ];

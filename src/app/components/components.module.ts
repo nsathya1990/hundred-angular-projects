@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 
 import { SharedModule } from '../shared/shared.module';
 
-import { ServiceDocumentationComponent } from '../services/service-documentation/service-documentation.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ComponentDocumentationComponent } from './component-documentation/component-documentation.component';
 import { CreditCardInputComponent } from './credit-card-input/credit-card-input.component';
@@ -36,7 +35,6 @@ import { TwitterPostComponent } from './twitter-post/twitter-post.component';
     StarRatingsComponent,
     TopOfPageComponent,
     ComponentDocumentationComponent,
-    ServiceDocumentationComponent,
     LoaderComponent,
     CreditCardInputComponent,
     TwitterPostComponent,
