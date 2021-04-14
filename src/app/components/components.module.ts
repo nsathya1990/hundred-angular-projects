@@ -28,6 +28,7 @@ import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
+import { BannerCutOutComponent } from './banner-cut-out/banner-cut-out.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
     EmailFormComponent,
     RibbonComponent,
     ButtonToggleComponent,
+    BannerCutOutComponent,
   ],
   imports: [
     CommonModule,
