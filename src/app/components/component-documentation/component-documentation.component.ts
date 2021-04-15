@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 import { AccordionItem } from '../accordion/accordion-item.interface';
 
@@ -7,6 +7,8 @@ import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { RibbonType } from '../ribbon/ribbon-type.enum';
 
 import { ButtonMeta } from '../button-toggle/button-meta.model';
+
+import { SnackbarComponent } from '../snackbar/snackbar.component';
 
 @Component({
   selector: 'app-component-documentation',
@@ -57,11 +59,20 @@ export class ComponentDocumentationComponent implements OnInit {
     new ButtonMeta({ id: 3, title: 'Underline' }),
   ];
 
+  /** Another way of making it work
+   * @ViewChild('snackbar') snackbar: SnackbarComponent;
+   */
+  @ViewChild(SnackbarComponent) snackbar: SnackbarComponent;
+
   constructor() {}
 
   ngOnInit(): void {}
 
   debounceExampleMethod(value: string): void {
     console.log(`Component Documentation: ${value}`);
+  }
+
+  snackbarShow(): void {
+    this.snackbar.show();
   }
 }

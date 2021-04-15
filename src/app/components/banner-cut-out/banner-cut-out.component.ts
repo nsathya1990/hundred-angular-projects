@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-banner-cut-out',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class BannerCutOutComponent implements OnInit {
   imageUrl =
     'https://images.unsplash.com/photo-1509478074354-0de2c9bb7c8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=973&q=80';
-  title = '100 Angular Challenges';
+  @Input() title = '100 Angular Challenges';
 
   constructor() {}
 
