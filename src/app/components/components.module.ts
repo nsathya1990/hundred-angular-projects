@@ -29,6 +29,7 @@ import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
+import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { SnackbarComponent } from './snackbar/snackbar.component';
     RibbonComponent,
     ButtonToggleComponent,
     SnackbarComponent,
+    SimplePopupComponent,
   ],
   imports: [
     CommonModule,
