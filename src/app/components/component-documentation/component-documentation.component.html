@@ -3,6 +3,17 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Countdown Timer'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-countdown-timer body [time]="'Jan 25, 2022 11:33:44'">
+    </app-countdown-timer>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Simple Popup'"
   [subTitle]="'Components'"
 >

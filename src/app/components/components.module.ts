@@ -30,6 +30,7 @@ import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SimplePopupComponent } from './simple-popup/simple-popup.component';
+import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 
 @NgModule({
   declarations: [
@@ -58,6 +59,7 @@ import { SimplePopupComponent } from './simple-popup/simple-popup.component';
     ButtonToggleComponent,
     SnackbarComponent,
     SimplePopupComponent,
+    CountdownTimerComponent,
   ],
   imports: [
     CommonModule,
