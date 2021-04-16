@@ -28,7 +28,6 @@ import { TopOfPageComponent } from './top-of-page/top-of-page.component';
 import { TwitterPostComponent } from './twitter-post/twitter-post.component';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { ButtonToggleComponent } from './button-toggle/button-toggle.component';
-import { SnackbarComponent } from './snackbar/snackbar.component';
 import { SimplePopupComponent } from './simple-popup/simple-popup.component';
 import { CountdownTimerComponent } from './countdown-timer/countdown-timer.component';
 
@@ -57,7 +56,6 @@ import { CountdownTimerComponent } from './countdown-timer/countdown-timer.compo
     EmailFormComponent,
     RibbonComponent,
     ButtonToggleComponent,
-    SnackbarComponent,
     SimplePopupComponent,
     CountdownTimerComponent,
   ],

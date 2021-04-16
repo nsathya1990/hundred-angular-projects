@@ -73,6 +73,6 @@ export class ComponentDocumentationComponent implements OnInit {
   }
 
   snackbarShow(): void {
-    this.snackbar.show();
+    this.snackbar.showMessage('Snackbar Example');
   }
 }

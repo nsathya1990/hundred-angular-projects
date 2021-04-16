@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { User } from '../user/user.model';
 
+import { SnackbarService } from '../snackbar/snackbar.service';
 import { UserService } from '../user/user.service';
 
 @Component({
@@ -12,10 +13,12 @@ import { UserService } from '../user/user.service';
 export class ServiceDocumentationComponent implements OnInit {
   user = new User();
 
-  constructor(private userService: UserService) {}
+  constructor(
+    private snackbarService: SnackbarService,
+    private userService: UserService
+  ) {}
 
   ngOnInit(): void {
-    // tslint:disable-next-line: deprecation
     this.userService.getUserById(1).subscribe({
       next: (response: any) => {
         this.user = response;
@@ -24,5 +27,9 @@ export class ServiceDocumentationComponent implements OnInit {
       error: (error) => console.log(error),
       complete: () => console.log('Done'),
     });
+  }
+
+  callSnackbar(): void {
+    this.snackbarService.callSnackbar('Snackbar Service Example');
   }
 }
