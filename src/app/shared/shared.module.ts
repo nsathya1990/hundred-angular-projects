@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { BannerCutOutComponent } from '../components/banner-cut-out/banner-cut-out.component';
 import { CardComponent } from '../components/card/card.component';
 import { CounterInputComponent } from '../components/counter-input/counter-input.component';
+import { FooterComponent } from '../components/footer/footer.component';
 import { SnackbarComponent } from '../components/snackbar/snackbar.component';
 import { TabComponent } from '../components/tab/tab.component';
 
@@ -15,6 +16,7 @@ import { FilterTermPipe } from '../pipes/filter-term/filter-term.pipe';
     BannerCutOutComponent,
     CardComponent,
     CounterInputComponent,
+    FooterComponent,
     SnackbarComponent,
     TabComponent,
     FilterTermPipe,
@@ -24,6 +26,7 @@ import { FilterTermPipe } from '../pipes/filter-term/filter-term.pipe';
     BannerCutOutComponent,
     CardComponent,
     CounterInputComponent,
+    FooterComponent,
     SnackbarComponent,
     TabComponent,
     FilterTermPipe,

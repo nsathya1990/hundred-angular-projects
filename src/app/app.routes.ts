@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 export const APP_ROUTES: Routes = [
   { path: '', component: ComponentDocumentationComponent },
@@ -23,5 +24,9 @@ export const APP_ROUTES: Routes = [
     path: 'services',
     loadChildren: () =>
       import('./services/services.module').then((m) => m.ServicesModule),
+  },
+  {
+    path: '**',
+    component: NotFoundComponent,
   },
 ];
