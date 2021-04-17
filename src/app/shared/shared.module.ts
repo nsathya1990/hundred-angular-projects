@@ -6,6 +6,7 @@ import { BannerCutOutComponent } from '../components/banner-cut-out/banner-cut-o
 import { CardComponent } from '../components/card/card.component';
 import { CounterInputComponent } from '../components/counter-input/counter-input.component';
 import { SnackbarComponent } from '../components/snackbar/snackbar.component';
+import { TabComponent } from '../components/tab/tab.component';
 
 import { FilterTermPipe } from '../pipes/filter-term/filter-term.pipe';
 
@@ -15,6 +16,7 @@ import { FilterTermPipe } from '../pipes/filter-term/filter-term.pipe';
     CardComponent,
     CounterInputComponent,
     SnackbarComponent,
+    TabComponent,
     FilterTermPipe,
   ],
   imports: [CommonModule, FormsModule],
@@ -23,6 +25,7 @@ import { FilterTermPipe } from '../pipes/filter-term/filter-term.pipe';
     CardComponent,
     CounterInputComponent,
     SnackbarComponent,
+    TabComponent,
     FilterTermPipe,
   ],
 })

@@ -21,7 +21,6 @@ import { SearchListComponent } from './search-list/search-list.component';
 import { SimpleTableComponent } from './simple-table/simple-table.component';
 import { SortTableComponent } from './sort-table/sort-table.component';
 import { StarRatingsComponent } from './star-ratings/star-ratings.component';
-import { TabComponent } from './tab/tab.component';
 import { ToggleComponent } from './toggle/toggle.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { TopOfPageComponent } from './top-of-page/top-of-page.component';
@@ -52,7 +51,6 @@ import { FooterComponent } from './footer/footer.component';
     SearchListComponent,
     SimpleTableComponent,
     PagingComponent,
-    TabComponent,
     SortTableComponent,
     EmailFormComponent,
     RibbonComponent,
