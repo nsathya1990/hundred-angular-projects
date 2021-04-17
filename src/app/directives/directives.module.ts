@@ -12,6 +12,7 @@ import { DebounceClickDirective } from './debounce-click/debounce-click.directiv
 import { RippleDirective } from './ripple/ripple.directive';
 import { ScaleDirective } from './scale/scale.directive';
 import { CopyDirective } from './copy/copy.directive';
+import { LazyLoadImageDirective } from './lazy-load-image/lazy-load-image.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CopyDirective } from './copy/copy.directive';
     DebounceClickDirective,
     RippleDirective,
     ScaleDirective,
+    LazyLoadImageDirective,
   ],
   imports: [
     CommonModule,
@@ -29,6 +31,7 @@ import { CopyDirective } from './copy/copy.directive';
   providers: [
     { provide: 'Navigator', useValue: navigator },
     { provide: 'Document', useValue: document },
+    { provide: 'Window', useValue: window },
   ],
 })
 export class DirectivesModule {}
