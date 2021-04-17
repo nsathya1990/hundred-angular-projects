@@ -2,6 +2,22 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Bottom Sheet'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-bottom-sheet #bottomSheet>
+      <h1 (click)="bottomSheet.hide()">Hello</h1>
+      <h1 (click)="bottomSheet.hide()">World</h1>
+    </app-bottom-sheet>
+  </div>
+  <div class="footer" footer>
+    <button (click)="bottomSheet.show()">Show</button>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Social Media Bar'"
   [subTitle]="'Components'"
 >
