@@ -2,6 +2,18 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Fieldset'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-fieldset [legend]="'Address'">
+      <app-email-form> </app-email-form>
+    </app-fieldset>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Bottom Sheet'"
   [subTitle]="'Components'"
 >

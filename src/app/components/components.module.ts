@@ -33,6 +33,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SkeletonLoaderComponent } from './skeleton-loader/skeleton-loader.component';
 import { SocialMediaBarComponent } from './social-media-bar/social-media-bar.component';
 import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
+import { FieldsetComponent } from './fieldset/fieldset.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +65,7 @@ import { BottomSheetComponent } from './bottom-sheet/bottom-sheet.component';
     SkeletonLoaderComponent,
     SocialMediaBarComponent,
     BottomSheetComponent,
+    FieldsetComponent,
   ],
   imports: [
     CommonModule,
