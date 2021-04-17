@@ -4,6 +4,7 @@ import { AccordionItem } from '../accordion/accordion-item.interface';
 import { SocialMediaIcon } from '../social-media-bar/social-media-icon.interface';
 
 import { LoaderType } from '../loader/models/loader-type.enum';
+import { PillType } from '../pill/pill-type.enum';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { RibbonType } from '../ribbon/ribbon-type.enum';
 import { SocialMedia } from '../social-media-bar/social-media.enum';
@@ -90,6 +91,8 @@ export class ComponentDocumentationComponent implements OnInit {
       type: SocialMedia.Twitter,
     },
   ];
+
+  PillType = PillType;
 
   constructor() {}
 
