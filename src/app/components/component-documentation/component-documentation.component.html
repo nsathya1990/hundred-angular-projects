@@ -1,5 +1,23 @@
-<h1>Components</h1>
-<hr />
+<app-banner-cut-out [title]="'Components'"></app-banner-cut-out>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Skeleton Loader'"
+  [subTitle]="'Components'"
+>
+  <div body>
+    <app-skeleton-loader *ngIf="!loaded"></app-skeleton-loader>
+    <p *ngIf="loaded">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged.
+    </p>
+  </div>
+  <button footer (click)="loaded = !loaded">Toggle</button>
+</app-card>
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"

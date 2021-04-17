@@ -64,6 +64,8 @@ export class ComponentDocumentationComponent implements OnInit {
    */
   @ViewChild(SnackbarComponent) snackbar: SnackbarComponent;
 
+  loaded = false;
+
   constructor() {}
 
   ngOnInit(): void {}
