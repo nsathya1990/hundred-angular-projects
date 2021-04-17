@@ -6,6 +6,6 @@ Build a basic toolbar component that renders out the content needed within it an
 
 ---
 
-- component
+- @Component()
 - ng-content
 - @Input()

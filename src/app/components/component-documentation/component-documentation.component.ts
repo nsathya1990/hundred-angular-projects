@@ -1,10 +1,12 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 
 import { AccordionItem } from '../accordion/accordion-item.interface';
+import { SocialMediaIcon } from '../social-media-bar/social-media-icon.interface';
 
 import { LoaderType } from '../loader/models/loader-type.enum';
 import { RibbonLocation } from '../ribbon/ribbon-location.enum';
 import { RibbonType } from '../ribbon/ribbon-type.enum';
+import { SocialMedia } from '../social-media-bar/social-media.enum';
 
 import { ButtonMeta } from '../button-toggle/button-meta.model';
 
@@ -65,6 +67,29 @@ export class ComponentDocumentationComponent implements OnInit {
   @ViewChild(SnackbarComponent) snackbar: SnackbarComponent;
 
   loaded = false;
+
+  socialMedia: SocialMediaIcon[] = [
+    {
+      href: 'https://www.facebook.com/scjmuthu/',
+      type: SocialMedia.Facebook,
+    },
+    {
+      href: 'https://github.com/nsathya1990/',
+      type: SocialMedia.GitHub,
+    },
+    {
+      href: 'https://www.instagram.com/sathyapriyan_c/',
+      type: SocialMedia.Instagram,
+    },
+    {
+      href: 'https://www.linkedin.com/in/nsathya1990/',
+      type: SocialMedia.LinkedIn,
+    },
+    {
+      href: 'https://twitter.com/sathyapriyan_c',
+      type: SocialMedia.Twitter,
+    },
+  ];
 
   constructor() {}
 
