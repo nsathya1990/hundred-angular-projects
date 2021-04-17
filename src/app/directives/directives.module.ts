@@ -11,10 +11,12 @@ import { DirectiveDocumentationComponent } from './directive-documentation/direc
 import { DebounceClickDirective } from './debounce-click/debounce-click.directive';
 import { RippleDirective } from './ripple/ripple.directive';
 import { ScaleDirective } from './scale/scale.directive';
+import { CopyDirective } from './copy/copy.directive';
 
 @NgModule({
   declarations: [
     DirectiveDocumentationComponent,
+    CopyDirective,
     DebounceClickDirective,
     RippleDirective,
     ScaleDirective,
@@ -23,6 +25,10 @@ import { ScaleDirective } from './scale/scale.directive';
     CommonModule,
     RouterModule.forChild(DIRECTIVES_ROUTES),
     SharedModule,
+  ],
+  providers: [
+    { provide: 'Navigator', useValue: navigator },
+    { provide: 'Document', useValue: document },
   ],
 })
 export class DirectivesModule {}
