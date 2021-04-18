@@ -12,7 +12,6 @@ import { DebounceSearchComponent } from './debounce-search/debounce-search.compo
 import { EmailFormComponent } from './email-form/email-form.component';
 import { LinkedinPostComponent } from './linkedin-post/linkedin-post.component';
 import { LoaderComponent } from './loader/loader.component';
-import { ModalComponent } from './modal/modal.component';
 import { PagingComponent } from './paging/paging.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { QuoteComponent } from './quote/quote.component';
@@ -51,7 +50,6 @@ import { OverlayComponent } from './overlay/overlay.component';
     CreditCardInputComponent,
     TwitterPostComponent,
     LinkedinPostComponent,
-    ModalComponent,
     QuoteComponent,
     ToggleComponent,
     RichTextViewerComponent,

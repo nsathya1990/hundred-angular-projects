@@ -8,20 +8,22 @@ import { DIRECTIVES_ROUTES } from './directives.routes';
 
 import { DirectiveDocumentationComponent } from './directive-documentation/directive-documentation.component';
 
+import { AutoFocusDirective } from './auto-focus/auto-focus.directive';
+import { CopyDirective } from './copy/copy.directive';
 import { DebounceClickDirective } from './debounce-click/debounce-click.directive';
+import { LazyLoadImageDirective } from './lazy-load-image/lazy-load-image.directive';
 import { RippleDirective } from './ripple/ripple.directive';
 import { ScaleDirective } from './scale/scale.directive';
-import { CopyDirective } from './copy/copy.directive';
-import { LazyLoadImageDirective } from './lazy-load-image/lazy-load-image.directive';
 
 @NgModule({
   declarations: [
     DirectiveDocumentationComponent,
+    AutoFocusDirective,
     CopyDirective,
     DebounceClickDirective,
+    LazyLoadImageDirective,
     RippleDirective,
     ScaleDirective,
-    LazyLoadImageDirective,
   ],
   imports: [
     CommonModule,

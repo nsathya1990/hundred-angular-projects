@@ -2,6 +2,24 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Auto Focus'"
+  [subTitle]="'Directives'"
+>
+  <div body>
+    <app-modal #modal>
+      <div *ngIf="!modal.isHidden">
+        <input type="text" appAutoFocus />
+      </div>
+    </app-modal>
+  </div>
+
+  <div footer class="footer">
+    <button (click)="modal.open()">Call Modal</button>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Copy'"
   [subTitle]="'Directives'"
 >
