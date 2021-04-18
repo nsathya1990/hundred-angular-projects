@@ -10,6 +10,8 @@ export class PipeDocumentationComponent implements OnInit {
 
   html = '<a href="https://github.com/nsathya1990" target="_blank">GitHub</a>';
 
+  stringArrayForSort = ['Courses', 'Youtube', 'Twitter', 'LinkedIn', 'GitHub'];
+
   constructor() {}
 
   ngOnInit(): void {}
