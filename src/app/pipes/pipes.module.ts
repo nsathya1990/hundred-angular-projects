@@ -11,6 +11,7 @@ import { PipeDocumentationComponent } from './pipe-documentation/pipe-documentat
 import { TruncatePipe } from './truncate/truncate.pipe';
 import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-formatter.pipe';
 import { FlattenPipe } from './flatten/flatten.pipe';
+import { RichTextPipe } from './rich-text/rich-text.pipe';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FlattenPipe } from './flatten/flatten.pipe';
     TruncatePipe,
     CreditCardFormatterPipe,
     FlattenPipe,
+    RichTextPipe,
   ],
   imports: [RouterModule.forChild(PIPE_ROUTES), CommonModule, SharedModule],
 })

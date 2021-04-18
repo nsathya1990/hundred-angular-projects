@@ -2,6 +2,16 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Rich Text'"
+  [subTitle]="'Pipes'"
+>
+  <div body>
+    <div [innerHtml]="html | richText"></div>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Filter Term'"
   [subTitle]="'Pipes'"
 >
