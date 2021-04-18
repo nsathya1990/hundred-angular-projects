@@ -2,6 +2,20 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Local Storage'"
+  [subTitle]="'Service'"
+>
+  <div body>
+    {{ state | json }}
+  </div>
+
+  <div footer>
+    <button (click)="updateState()">Update State</button>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Snackbar'"
   [subTitle]="'Service'"
 >
