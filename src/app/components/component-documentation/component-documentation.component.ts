@@ -94,6 +94,8 @@ export class ComponentDocumentationComponent implements OnInit {
 
   PillType = PillType;
 
+  isShownOverlay = false;
+
   constructor() {}
 
   ngOnInit(): void {}
