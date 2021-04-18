@@ -2,6 +2,20 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Param Example'"
+  [subTitle]="'Service'"
+>
+  <div body>
+    {{ userIdExample | json }}
+  </div>
+
+  <div footer>
+    <button routerLink="/services/3">Go to Route ID 3</button>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Local Storage'"
   [subTitle]="'Service'"
 >

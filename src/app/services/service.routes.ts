@@ -4,4 +4,5 @@ import { ServiceDocumentationComponent } from './service-documentation/service-d
 
 export const SERVICES_ROUTES: Routes = [
   { path: '', component: ServiceDocumentationComponent },
+  { path: ':id', component: ServiceDocumentationComponent },
 ];
