@@ -9,9 +9,9 @@ export class CopyDirective {
   @Input() appCopy = '';
 
   constructor(
-    @Inject('Navigator') private navigator: Navigator,
-    @Inject('Document') private document: Document,
-    private snackbarService: SnackbarService
+    @Inject('Navigator') public navigator: Navigator,
+    @Inject('Document') public document: Document,
+    public snackbarService: SnackbarService
   ) {}
 
   @HostListener('click')
