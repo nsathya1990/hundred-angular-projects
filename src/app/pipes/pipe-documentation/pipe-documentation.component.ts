@@ -12,6 +12,14 @@ export class PipeDocumentationComponent implements OnInit {
 
   stringArrayForSort = ['Courses', 'Youtube', 'Twitter', 'LinkedIn', 'GitHub'];
 
+  objectArraryForSort: { [key: string]: string }[] = [
+    { content: 'Courses' },
+    { content: 'Youtube' },
+    { content: 'Twitter' },
+    { content: 'LinkedIn' },
+    { content: 'GitHub' },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}

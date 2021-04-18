@@ -2,6 +2,25 @@
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Sort By Key'"
+  [subTitle]="'Pipes'"
+>
+  <div body>
+    <h5>Original Data</h5>
+    <p>{{ stringArrayForSort }}</p>
+    <h5>String Ascending</h5>
+    <p *ngFor="let obj of objectArraryForSort | sortByKey: 'content'">
+      {{ obj.content }}
+    </p>
+    <h5>String Descending</h5>
+    <p *ngFor="let obj of objectArraryForSort | sortByKey: 'content':false">
+      {{ obj.content }}
+    </p>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Sort By'"
   [subTitle]="'Pipes'"
 >

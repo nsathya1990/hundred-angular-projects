@@ -8,20 +8,22 @@ import { PIPE_ROUTES } from './pipes.routes';
 
 import { PipeDocumentationComponent } from './pipe-documentation/pipe-documentation.component';
 
-import { TruncatePipe } from './truncate/truncate.pipe';
 import { CreditCardFormatterPipe } from './credit-card-formatter/credit-card-formatter.pipe';
 import { FlattenPipe } from './flatten/flatten.pipe';
 import { RichTextPipe } from './rich-text/rich-text.pipe';
+import { SortByKeyPipe } from './sort-by-key/sort-by-key.pipe';
 import { SortByPipe } from './sort-by/sort-by.pipe';
+import { TruncatePipe } from './truncate/truncate.pipe';
 
 @NgModule({
   declarations: [
     PipeDocumentationComponent,
-    TruncatePipe,
     CreditCardFormatterPipe,
     FlattenPipe,
     RichTextPipe,
+    SortByKeyPipe,
     SortByPipe,
+    TruncatePipe,
   ],
   imports: [RouterModule.forChild(PIPE_ROUTES), CommonModule, SharedModule],
 })
