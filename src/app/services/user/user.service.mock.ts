@@ -1,5 +1,7 @@
 import { Observable, of } from 'rxjs';
 
+import { AUserService } from './a-user.service';
+
 import { User } from './user.model';
 
 export class HttpClientMock {
@@ -17,7 +19,7 @@ export class HttpClientMock {
   }
 }
 
-export class UserServiceMock {
+export class UserServiceMock implements AUserService {
   lastId: number = null;
   user = new User();
 

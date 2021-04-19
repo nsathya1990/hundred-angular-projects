@@ -11,6 +11,7 @@ import { SERVICES_ROUTES } from './service.routes';
 
 import { UserService } from './user/user.service';
 import { LocalStorageService } from './local-storage/local-storage.service';
+import { AUserService } from './user/a-user.service';
 
 @NgModule({
   declarations: [ServiceDocumentationComponent],
@@ -24,6 +25,7 @@ import { LocalStorageService } from './local-storage/local-storage.service';
     UserService,
     LocalStorageService,
     { provide: 'LocalStorage', useValue: window.localStorage },
+    { provide: AUserService, useClass: UserService },
   ],
 })
 export class ServicesModule {}

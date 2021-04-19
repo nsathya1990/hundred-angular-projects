@@ -6,8 +6,8 @@ import { of } from 'rxjs';
 import { User } from '../user/user.model';
 
 import { SnackbarService } from '../snackbar/snackbar.service';
-import { UserService } from '../user/user.service';
 import { LocalStorageService } from '../local-storage/local-storage.service';
+import { AUserService } from '../user/a-user.service';
 
 @Component({
   selector: 'app-service-documentation',
@@ -22,7 +22,7 @@ export class ServiceDocumentationComponent implements OnInit {
 
   constructor(
     private snackbarService: SnackbarService,
-    private userService: UserService,
+    private userService: AUserService,
     private localStorageService: LocalStorageService,
     private activatedRoute: ActivatedRoute
   ) {}

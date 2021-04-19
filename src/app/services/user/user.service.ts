@@ -3,12 +3,14 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
+import { AUserService } from './a-user.service';
+
 import { User } from './user.model';
 
 @Injectable({
   providedIn: 'root',
 })
-export class UserService {
+export class UserService implements AUserService {
   private readonly baseRoute = 'http://jsonplaceholder.typicode.com/users';
 
   constructor(private http: HttpClient) {}
