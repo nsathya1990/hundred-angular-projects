@@ -1,5 +1,7 @@
 import { Observable, of } from 'rxjs';
 
+import { User } from './user.model';
+
 export class HttpClientMock {
   lastUrl = '';
   lastOptions = null;
@@ -12,5 +14,16 @@ export class HttpClientMock {
     this.lastHttpMethod = 'GET';
 
     return of(this.response);
+  }
+}
+
+export class UserServiceMock {
+  lastId: number = null;
+  user = new User();
+
+  getUserById(id: number): Observable<User> {
+    this.lastId = id;
+
+    return of(this.user);
   }
 }

@@ -1,24 +1,25 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { LocalStorageService } from '../local-storage/local-storage.service';
+import { SnackbarService } from '../snackbar/snackbar.service';
+
+import { UserServiceMock } from '../user/user.service.mock';
 
 import { ServiceDocumentationComponent } from './service-documentation.component';
 
-describe('ServiceDocumentationComponent', () => {
-  let component: ServiceDocumentationComponent;
-  let fixture: ComponentFixture<ServiceDocumentationComponent>;
+describe(ServiceDocumentationComponent.name, () => {
+  describe('General', () => {
+    let component: ServiceDocumentationComponent;
+    let userService: UserServiceMock;
+    let snackbarService: SnackbarService;
+    let localStorageService: LocalStorageService;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ServiceDocumentationComponent],
-    }).compileComponents();
+    beforeEach(() => {
+      userService = new UserServiceMock();
+      component = new ServiceDocumentationComponent(
+        userService as any,
+        null,
+        null,
+        null
+      );
+    });
   });
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(ServiceDocumentationComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  /* it('should create', () => {
-    expect(component).toBeTruthy();
-  }); */
 });
